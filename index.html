@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>HACKER STYLE LOGIN</title> 
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="About.html">
+    <link rel="stylesheet" href="contact.html">
+    <link rel="stylesheet" href="features.html">
+    <link rel="stylesheet" href="hacker.html"> 
+    <!-- Optional: Google Fonts --> 
+    <link 
+href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" 
+rel="stylesheet"> 
+</head> 
+<body style="background-color: aqua;"> 
+ 
+     <header class="site-header"> 
+        <div class="container"> 
+        
+            
+            <a href="#" class="logo">website HACKER STYLE LOGIN</a> 
+            
+            <!-- Mobile Navigation Toggle -->
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav class="nav"> 
+                <ul> 
+                    <li><a href="index.html">Home</a></li> 
+                    <li><a href="About.html">About</a></li> 
+                    <li><a href="features.html">features</a></li>  
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="hacker.html">hacker</a></li> 
+                </ul> 
+            </nav> 
+        </div>
+    </header>
+    <div>
+        <H2>MISIGARO ELIE 23/DIT/BU/R/0008</H2>
+    </div>
+    <!-- ==== Hero Section ==== --> 
+    <section id="home" class="hero"> 
+        <div class="container hero__content"> 
+            <h1>Build <span class="highlight">Malware:</span>protect your devices and your bank account</h1> 
+            <p class="lead"> HACKER STYLE LOGIN gives you, your freedom of using your private things.</p> 
+            <a href="#contact" class="btn btn-primary">Get Started</a> 
+        </div>
+        <div>
+            <article class="card">
+                <img src="hacker.png" alt="hacking photo">
+
+            </article>
+        </div> 
+    </section> 
+    <!-- ==== Footer ==== --> 
+    <footer class="site-footer"> 
+        <div class="container"> 
+            <p>&copy; <span id="year"></span> HACKER STYLE LOGIN@ 2025. All rights reserved.</p> 
+        </div> 
+    </footer> 
+ 
+    <script> 
+        // Simple mobile menu toggle 
+        const toggle = document.querySelector('.nav-toggle'); 
+        const nav = document.querySelector('.nav ul'); 
+        toggle.addEventListener('click', () => { 
+            nav.classList.toggle('open'); 
+            toggle.classList.toggle('active'); 
+        }); 
+ 
+        // Update year automatically 
+        document.getElementById('year').textContent = new Date().getFullYear(); 
+    </script> 
+</body> 
+</html>
